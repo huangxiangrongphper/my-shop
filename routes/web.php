@@ -14,7 +14,7 @@
 /**首页 直接展示商品列表页面**/
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
-
+Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 /**Laravel 的用户认证路由**/
 Auth::routes();
 
