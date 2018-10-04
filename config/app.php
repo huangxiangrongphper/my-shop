@@ -128,6 +128,9 @@ return [
     /*factory中文显示*/
     'faker_locale' => 'zh_CN',
 
+    /*订单关闭时间*/
+    'order_ttl' => 1800,
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

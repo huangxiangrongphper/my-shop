@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderRequest;
+use App\Jobs\CloseOrder;
 use App\Models\Order;
 use App\Models\ProductSku;
 use App\Models\UserAddress;
@@ -63,6 +64,9 @@ class OrdersController extends Controller
 
             return $order;
         });
+
+        //触发关闭订单的任务
+        $this->dispatch(new CloseOrder($order, config('app.order_ttl')));
 
         return $order;
     }
