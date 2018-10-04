@@ -17,6 +17,8 @@ Route::get('products', 'ProductsController@index')->name('products.index');
 /**Laravel 的用户认证路由**/
 Auth::routes();
 
+
+
 /**用户邮箱验证路由**/
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/email_verify_notice', 'PagesController@emailVerifyNotice')->name('email_verify_notice');
