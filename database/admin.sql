@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
--- Host: localhost    Database: my-shop
+-- Host: 127.0.0.1    Database: my-shop
 -- ------------------------------------------------------
 -- Server version	5.7.22-0ubuntu18.04.1
 
@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,'2018-10-02 16:22:05'),(2,0,6,'系统管理','fa-tasks',NULL,NULL,'2018-10-05 22:22:03'),(3,2,7,'管理员','fa-users','auth/users',NULL,'2018-10-05 22:22:03'),(4,2,8,'角色','fa-user','auth/roles',NULL,'2018-10-05 22:22:03'),(5,2,9,'权限','fa-ban','auth/permissions',NULL,'2018-10-05 22:22:04'),(6,2,10,'菜单','fa-bars','auth/menu',NULL,'2018-10-05 22:22:04'),(7,2,11,'操作日志','fa-history','auth/logs',NULL,'2018-10-05 22:22:04'),(8,0,2,'用户管理','fa-bars','/users','2018-10-02 17:45:30','2018-10-02 17:47:22'),(9,0,3,'商品管理','fa-bars','/products','2018-10-02 19:03:33','2018-10-02 19:04:10'),(10,0,4,'订单管理','fa-bars','/orders','2018-10-04 22:48:24','2018-10-04 22:48:47'),(11,0,5,'优惠券管理','fa-bars','/coupon_codes','2018-10-05 22:21:34','2018-10-05 22:22:03');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,'2018-10-02 16:22:05'),(2,0,7,'系统管理','fa-tasks',NULL,NULL,'2018-10-06 18:33:57'),(3,2,8,'管理员','fa-users','auth/users',NULL,'2018-10-06 18:33:57'),(4,2,9,'角色','fa-user','auth/roles',NULL,'2018-10-06 18:33:57'),(5,2,10,'权限','fa-ban','auth/permissions',NULL,'2018-10-06 18:33:57'),(6,2,11,'菜单','fa-bars','auth/menu',NULL,'2018-10-06 18:33:57'),(7,2,12,'操作日志','fa-history','auth/logs',NULL,'2018-10-06 18:33:57'),(8,0,2,'用户管理','fa-bars','/users','2018-10-02 17:45:30','2018-10-02 17:47:22'),(9,0,4,'商品管理','fa-bars','/products','2018-10-02 19:03:33','2018-10-06 18:33:57'),(10,0,5,'订单管理','fa-bars','/orders','2018-10-04 22:48:24','2018-10-06 18:33:57'),(11,0,6,'优惠券管理','fa-bars','/coupon_codes','2018-10-05 22:21:34','2018-10-06 18:33:57'),(12,0,3,'类目管理','fa-bars','/categories','2018-10-06 18:33:24','2018-10-06 18:33:57');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$P/yseOSw119qo66DPF/IJOLybWK1DxeBBP538uqrtXwg02.gPhjji','Administrator',NULL,'osKyaJVeohqezHrW8qEvvCO2wPT5bHYnvkC7PluqWunOOKYYcsxeegFuUXwd','2018-10-02 16:04:42','2018-10-02 16:04:42'),(2,'operator','$2y$10$wrDuHoDT1f7x.CWkuBVGduERizX168iPVbiB7rOWvUdNJ934BDDTu','运营',NULL,'La5B5m26aWy6KEblW7ze4raJPw9f5KTshJfczHU2z4XBnA9FPUbkEDcuNMrF','2018-10-02 18:09:20','2018-10-02 18:09:20');
+INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$P/yseOSw119qo66DPF/IJOLybWK1DxeBBP538uqrtXwg02.gPhjji','Administrator',NULL,'osKyaJVeohqezHrW8qEvvCO2wPT5bHYnvkC7PluqWunOOKYYcsxeegFuUXwd','2018-10-02 16:04:42','2018-10-02 16:04:42'),(2,'operator','$2y$10$wrDuHoDT1f7x.CWkuBVGduERizX168iPVbiB7rOWvUdNJ934BDDTu','运营',NULL,'jf8CDjPJcCQITJving1wH14XUNfQxS0hdkOEcB0iVL590pPTplTMD7SFiBm9','2018-10-02 18:09:20','2018-10-02 18:09:20');
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-05 18:42:33
+-- Dump completed on 2018-10-06 10:45:24
