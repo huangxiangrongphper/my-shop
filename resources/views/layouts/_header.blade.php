@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel Shop
+                黄向荣的个人商城
             </a>
         </div>
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
