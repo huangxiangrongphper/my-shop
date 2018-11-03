@@ -12,7 +12,7 @@
 */
 
 //秒杀接口
-Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
+Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store')->middleware('random_drop:80');
 /**首页 直接展示商品列表页面**/
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
